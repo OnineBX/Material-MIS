@@ -1,0 +1,5 @@
+D:\project\MMSPro\MMSPro.ADHelper\bin\Debug\MMSPro.ADHelper.dll
+D:\project\MMSPro\MMSPro.ADHelper\bin\Debug\MMSPro.ADHelper.pdb
+D:\project\MMSPro\MMSPro.ADHelper\obj\Debug\ResolveAssemblyReference.cache
+D:\project\MMSPro\MMSPro.ADHelper\obj\Debug\MMSPro.ADHelper.dll
+D:\project\MMSPro\MMSPro.ADHelper\obj\Debug\MMSPro.ADHelper.pdb

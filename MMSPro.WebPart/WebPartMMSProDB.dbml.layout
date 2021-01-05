@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 21.625" name="WebPartMMSProDB">
+  <DataContextMoniker Name="/WebPartMMSProDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" absoluteBounds="0.75, 7.375, 2, 1.7855859374999996">
+      <DataClassMoniker Name="/WebPartMMSProDBDataContext/EmpInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="801d7d79-f711-41a1-8363-e9d6611c16a1" absoluteBounds="0.765, 7.835, 1.9700000000000002, 1.2255859375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22db10dc-a2e4-47ac-8b77-10416b89ffb9" absoluteBounds="3.5, 8.125, 2, 2.9659244791666666">
+      <DataClassMoniker Name="/WebPartMMSProDBDataContext/TaskStorageIn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1931ab0c-ceaf-4e7f-b131-fa00d9e5381b" absoluteBounds="3.515, 8.585, 1.9700000000000002, 2.4059244791666665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62ba5c17-dd43-455a-96da-a935d3b1da16" absoluteBounds="3.5, 11.75, 2, 3.1345442708333309">
+      <DataClassMoniker Name="/WebPartMMSProDBDataContext/StockTransferTask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19b9a42d-80e9-4eca-a569-4e4c7463c9f5" absoluteBounds="3.515, 12.21, 1.9700000000000002, 2.574544270833333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 8.64279296875); (3.5 : 8.64279296875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_TaskStorageIn" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="22db10dc-a2e4-47ac-8b77-10416b89ffb9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.321396484375); (3.5 : 8.321396484375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_TaskStorageIn1" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="22db10dc-a2e4-47ac-8b77-10416b89ffb9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.1605859375); (1.75 : 13.3172721354167); (2.34635604166667 : 13.3172721354167 : JumpStart); (2.66145958333333 : 13.3172721354167 : JumpEnd); (3.5 : 13.3172721354167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_StockTransferTask" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="62ba5c17-dd43-455a-96da-a935d3b1da16" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 9.1605859375); (2.2812525 : 12.5023835677083); (2.34635604166667 : 12.5023835677083 : JumpStart); (2.66145958333333 : 12.5023835677083 : JumpEnd); (3.5 : 12.5023835677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_StockTransferTask1" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="62ba5c17-dd43-455a-96da-a935d3b1da16" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d4925f17-0306-4742-a83c-856ff991f084" absoluteBounds="6.25, 12.25, 2, 1.2797265624999987">
+      <DataClassMoniker Name="/WebPartMMSProDBDataContext/MessageReceiver" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2651afb-7454-48ff-9a5b-49caed101e8b" absoluteBounds="6.265, 12.71, 1.9700000000000002, 0.7197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26984255-d6a6-4ebb-9ad1-1f9acc0ae125" absoluteBounds="3.5, 16.25, 2, 2.1228255208333309">
+      <DataClassMoniker Name="/WebPartMMSProDBDataContext/MessageInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0840285-14d0-44c3-bb17-b9781437306a" absoluteBounds="3.515, 16.71, 1.9700000000000002, 1.5628255208333335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 7.71875); (7.25 : 7.71875); (7.25 : 12.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_MessageReceiver" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="d4925f17-0306-4742-a83c-856ff991f084" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.3114127604167); (7.25 : 17.3114127604167); (7.25 : 13.5297265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/MessageInfo/MessageInfo_MessageReceiver" />
+      <nodes>
+        <classShapeMoniker Id="26984255-d6a6-4ebb-9ad1-1f9acc0ae125" />
+        <classShapeMoniker Id="d4925f17-0306-4742-a83c-856ff991f084" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 9.1605859375); (1.2187475 : 17.3114127604167); (2.34635604166667 : 17.3114127604167 : JumpStart); (2.66145958333333 : 17.3114127604167 : JumpEnd); (3.5 : 17.3114127604167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_MessageInfo" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="26984255-d6a6-4ebb-9ad1-1f9acc0ae125" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c093fe88-1e05-4407-8643-ce36509dc98c" absoluteBounds="2.125, 18.625, 2, 2.7973046875">
+      <DataClassMoniker Name="/WebPartMMSProDBDataContext/StorageOutTask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6b2c696-f83a-48a3-ab10-8b8f5bf734c1" absoluteBounds="2.14, 19.085, 1.9700000000000002, 2.2373046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.57812625 : 9.1605859375); (2.57812625 : 18.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_StorageOutTask" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="c093fe88-1e05-4407-8643-ce36509dc98c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.429689375 : 9.1605859375); (2.429689375 : 18.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebPartMMSProDBDataContext/EmpInfo/EmpInfo_StorageOutTask1" />
+      <nodes>
+        <classShapeMoniker Id="db4a6bdb-1584-4c9d-ba28-e4d9fc3e4c6e" />
+        <classShapeMoniker Id="c093fe88-1e05-4407-8643-ce36509dc98c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

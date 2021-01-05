@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="MMSPro" Class="WebPartMMSProDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MOSS;Initial Catalog=MMSPro;Persist Security Info=True;User ID=sa" SettingsObjectName="MMSPro.WebPart.Properties.Settings" SettingsPropertyName="MMSProConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EmpInfo" Member="EmpInfo">
+    <Type Name="EmpInfo">
+      <Column Name="EmpID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Account" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="EmpInfo_TaskStorageIn" Member="TaskStorageIn" ThisKey="EmpID" OtherKey="TaskCreaterID" Type="TaskStorageIn" />
+      <Association Name="EmpInfo_TaskStorageIn1" Member="TaskStorageIn1" ThisKey="EmpID" OtherKey="TaskTargetID" Type="TaskStorageIn" />
+      <Association Name="EmpInfo_StockTransferTask" Member="StockTransferTask" ThisKey="EmpID" OtherKey="TaskCreaterID" Type="StockTransferTask" />
+      <Association Name="EmpInfo_StockTransferTask1" Member="StockTransferTask1" ThisKey="EmpID" OtherKey="TaskTargetID" Type="StockTransferTask" />
+      <Association Name="EmpInfo_MessageReceiver" Member="MessageReceiver" ThisKey="EmpID" OtherKey="ReceiverID" Type="MessageReceiver" />
+      <Association Name="EmpInfo_MessageInfo" Member="MessageInfo" ThisKey="EmpID" OtherKey="Creater" Type="MessageInfo" />
+      <Association Name="EmpInfo_StorageOutTask" Member="StorageOutTask" ThisKey="EmpID" OtherKey="TaskCreaterID" Type="StorageOutTask" />
+      <Association Name="EmpInfo_StorageOutTask1" Member="StorageOutTask1" ThisKey="EmpID" OtherKey="TaskTargetID" Type="StorageOutTask" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaskStorageIn" Member="TaskStorageIn">
+    <Type Name="TaskStorageIn">
+      <Column Name="TaskStorageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TaskCreaterID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskTargetID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StorageInType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StorageInID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QCBatch" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="InspectState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskDispose" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="EmpInfo_TaskStorageIn" Member="EmpInfo" ThisKey="TaskCreaterID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+      <Association Name="EmpInfo_TaskStorageIn1" Member="EmpInfo1" ThisKey="TaskTargetID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StockTransferTask" Member="StockTransferTask">
+    <Type Name="StockTransferTask">
+      <Column Name="StockTransferTaskID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StockTransferID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskCreaterID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TaskTargetID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TaskInType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AcceptTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AuditOpinion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="AuditStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskDispose" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="EmpInfo_StockTransferTask" Member="EmpInfo" ThisKey="TaskCreaterID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+      <Association Name="EmpInfo_StockTransferTask1" Member="EmpInfo1" ThisKey="TaskTargetID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MessageReceiver" Member="MessageReceiver">
+    <Type Name="MessageReceiver">
+      <Column Name="MessageReceiverID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageInfoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiverID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="EmpInfo_MessageReceiver" Member="EmpInfo" ThisKey="ReceiverID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+      <Association Name="MessageInfo_MessageReceiver" Member="MessageInfo" ThisKey="MessageInfoID" OtherKey="MessageInfoID" Type="MessageInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MessageInfo" Member="MessageInfo">
+    <Type Name="MessageInfo">
+      <Column Name="MessageInfoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Creater" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageTitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MessageContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MessageSource" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageStatus" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageType" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="MessageInfo_MessageReceiver" Member="MessageReceiver" ThisKey="MessageInfoID" OtherKey="MessageInfoID" Type="MessageReceiver" />
+      <Association Name="EmpInfo_MessageInfo" Member="EmpInfo" ThisKey="Creater" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StorageOutTask" Member="StorageOutTask">
+    <Type Name="StorageOutTask">
+      <Column Name="TaskID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Process" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskCreaterID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskTargetID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NoticeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TaskState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskDispose" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PreviousTaskID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="EmpInfo_StorageOutTask" Member="EmpInfo" ThisKey="TaskCreaterID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+      <Association Name="EmpInfo_StorageOutTask1" Member="EmpInfo1" ThisKey="TaskTargetID" OtherKey="EmpID" Type="EmpInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="c8f69e3d-a10f-4323-a351-17cf9f79156a" />
+      <importErrorMessage>Cannot import MyMessage Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">MyMessage Web Part</property>
+        <property name="Description" type="string">MyMessage Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

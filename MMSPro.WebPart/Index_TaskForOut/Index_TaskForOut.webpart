@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <!--
+      The following Guid is used as a reference to the web part class, 
+      and it will be automatically replaced with actual type name at deployment time.
+      -->
+      <type name="e2ea86e2-7ff6-4824-a1ae-3f11e242f5d7" />
+      <importErrorMessage>Cannot import Index_TaskForOut Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Index_TaskForOut Web Part</property>
+        <property name="Description" type="string">Index_TaskForOut Description</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

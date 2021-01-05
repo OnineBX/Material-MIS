@@ -1,0 +1,6 @@
+D:\project\MMSPro\MMSPro.WebPart\bin\Debug\MMSPro.WebPart.dll.config
+D:\project\MMSPro\MMSPro.WebPart\bin\Debug\MMSPro.WebPart.dll
+D:\project\MMSPro\MMSPro.WebPart\bin\Debug\MMSPro.WebPart.pdb
+D:\project\MMSPro\MMSPro.WebPart\obj\Debug\ResolveAssemblyReference.cache
+D:\project\MMSPro\MMSPro.WebPart\obj\Debug\MMSPro.WebPart.dll
+D:\project\MMSPro\MMSPro.WebPart\obj\Debug\MMSPro.WebPart.pdb

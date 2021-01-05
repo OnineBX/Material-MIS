@@ -1,0 +1,10 @@
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\MMSPro.WebApp.dll.config
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\MMSPro.WebApp.dll
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\MMSPro.WebApp.pdb
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\MMSPro.ADHelper.dll
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\Net.SourceForge.Koogra.dll
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\org.in2bits.MyXls.dll
+D:\project\MMSPro\MMSPro.WebApp\bin\Debug\MMSPro.ADHelper.pdb
+D:\project\MMSPro\MMSPro.WebApp\obj\Debug\ResolveAssemblyReference.cache
+D:\project\MMSPro\MMSPro.WebApp\obj\Debug\MMSPro.WebApp.dll
+D:\project\MMSPro\MMSPro.WebApp\obj\Debug\MMSPro.WebApp.pdb

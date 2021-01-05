@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMSPro.WebApp", "MMSPro.WebApp\MMSPro.WebApp.csproj", "{AFFFABED-D1D0-4D2E-9FA0-9AC7D702830B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81D98482-594F-4FB0-93D4-DB3B59484D71} = {81D98482-594F-4FB0-93D4-DB3B59484D71}
+		{E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612} = {E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMSPro.WebPart", "MMSPro.WebPart\MMSPro.WebPart.csproj", "{81D98482-594F-4FB0-93D4-DB3B59484D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMSPro.ADHelper", "MMSPro.ADHelper\MMSPro.ADHelper.csproj", "{E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MMSPro.ADHelper\\MMSPro.ADHelper.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = MMSPro.ADHelper\\
+		SccProjectUniqueName2 = MMSPro.WebApp\\MMSPro.WebApp.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = MMSPro.WebApp\\
+		SccProjectUniqueName3 = MMSPro.WebPart\\MMSPro.WebPart.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = MMSPro.WebPart\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFFFABED-D1D0-4D2E-9FA0-9AC7D702830B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFFABED-D1D0-4D2E-9FA0-9AC7D702830B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFFABED-D1D0-4D2E-9FA0-9AC7D702830B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFFABED-D1D0-4D2E-9FA0-9AC7D702830B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D98482-594F-4FB0-93D4-DB3B59484D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D98482-594F-4FB0-93D4-DB3B59484D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D98482-594F-4FB0-93D4-DB3B59484D71}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{81D98482-594F-4FB0-93D4-DB3B59484D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D98482-594F-4FB0-93D4-DB3B59484D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D98482-594F-4FB0-93D4-DB3B59484D71}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B56495-0CD3-4E9F-8FE2-AB7E3DFE7612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
